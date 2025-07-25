@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration & Login</h1>
+
+        <div class="form">
+            <h2>Register</h2>
+            <input type="text" id="regUsername" placeholder="Username">
+            <input type="password" id="regPassword" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <p id="registerMessage" class="message"></p>
+        </div>
+
+        <div class="form">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p id="loginMessage" class="message"></p>
+        </div>
+
+        <div id="welcome" class="welcome">
+            <h3>Welcome, <span id="welcomeUser"></span>!</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
